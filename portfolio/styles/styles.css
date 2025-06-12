@@ -1,0 +1,110 @@
+body{
+    background-color: #B4EBE6;
+    grid-template-areas: 
+       "S1 S1 S1 S1 S1 S1"
+       "S1 S1 S1 S1 S1 S1"
+       "S2 S2 S2 S2 S2 S2"
+       "S3 S3 S3 S3 S3 S3"
+       "ft ft ft ft ft ft"
+    ;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 100%;
+    position: fixed;
+    top: 0;
+    width: 92.1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 5;
+    background: linear-gradient(to right,#0065f8,#00FFDE,#0065F8);
+}
+
+.navlinks{
+    text-decoration: none;
+}
+
+.navlinks:hover{
+    background: #2015ff;
+    color: #fff;
+    transition: ease 0.3s;
+}
+
+img{
+    width: 20em;
+    height: 20em;
+    border-radius: 15px;
+}
+
+.section1 {
+    grid-area: S1;
+}
+
+.section2 {
+    grid-area: S2;
+}
+
+.section3 {
+    grid-area: S3;
+}
+
+#footer {
+    grid-area: ft;
+    background-color: #181468;
+    color: #fff;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.bottomnav{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    border: solid;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    margin-bottom: 100px;
+}
+
+/* css styling for medium displays */
+@media(min-width:800px) and (max-width:1024px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+}
+
+/* css styling for small displays */
+@media (min-width:360px) and (max-width:799px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+}
